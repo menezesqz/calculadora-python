@@ -1,4 +1,4 @@
-# calculadora.py
+# calculadora.python
 
 def somar(x, y):
     return x + y
