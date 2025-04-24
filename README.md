@@ -1,46 +1,17 @@
-# calculadora.py
+# Calculadora em Python
 
-def somar(x, y):
-    return x + y
+Uma calculadora simples de terminal feita em Python. Suporta as quatro operações básicas: adição, subtração, multiplicação e divisão.
 
-def subtrair(x, y):
-    return x - y
+## Funcionalidades
 
-def multiplicar(x, y):
-    return x * y
+- Soma de dois números
+- Subtração de dois números
+- Multiplicação de dois números
+- Divisão de dois números (com verificação de divisão por zero)
 
-def dividir(x, y):
-    if y == 0:
-        return "Erro: divisão por zero"
-    return x / y
+## Como usar
 
-def main():
-    print("=== Calculadora em Python ===")
-    print("Operações disponíveis:")
-    print("1. Somar")
-    print("2. Subtrair")
-    print("3. Multiplicar")
-    print("4. Dividir")
-
-    escolha = input("Escolha a operação (1/2/3/4): ")
-
-    try:
-        num1 = float(input("Digite o primeiro número: "))
-        num2 = float(input("Digite o segundo número: "))
-    except ValueError:
-        print("Erro: entrada inválida. Digite números.")
-        return
-
-    if escolha == '1':
-        print(f"Resultado: {somar(num1, num2)}")
-    elif escolha == '2':
-        print(f"Resultado: {subtrair(num1, num2)}")
-    elif escolha == '3':
-        print(f"Resultado: {multiplicar(num1, num2)}")
-    elif escolha == '4':
-        print(f"Resultado: {dividir(num1, num2)}")
-    else:
-        print("Opção inválida.")
-
-if __name__ == "__main__":
-    main()
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/calculadora-python.git
+   cd calculadora-python
